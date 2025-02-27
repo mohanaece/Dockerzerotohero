@@ -14,6 +14,7 @@ source venv1/bin/activate && \
 pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8000
+ENV PYTHONUNBUFFERED=1
 
 CMD source venv1/bin/activate && python3 manage.py runserver 0.0.0.0:8000
 
